@@ -1,0 +1,35 @@
+{
+	"type": "module",
+	"name": "books-collection-app",
+	"version": "1.0.0",
+	"description": "A simple RESTful API server in Node.js for the book collection app. Each book has a title, description, and 1-n authors. API endpoints allows searching in collection and book management (CRUD)",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js",
+		"live": "nodemon app.js",
+		"test": "mocha 'server/tests/test-apis.js' --timeout 10000 --exit"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Kinshuk1993/books-collection-app.git"
+	},
+	"author": "Kinshuk Bhardwaj",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Kinshuk1993/books-collection-app/issues"
+	},
+	"homepage": "https://github.com/Kinshuk1993/books-collection-app#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"mongoose": "^6.0.12",
+		"winston": "^3.3.3",
+		"winston-daily-rotate-file": "^4.5.5"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.13",
+		"chai": "^4.3.4",
+		"chai-http": "^4.3.0",
+		"mocha": "^9.1.3",
+		"nodemon": "^2.0.15"
+	}
+}
