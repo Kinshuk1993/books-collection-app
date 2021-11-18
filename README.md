@@ -38,7 +38,7 @@ To start, run the following command from the project root folder:
 - While searching for a book using a search term present in the title, the matching will be `case-insensitive`
 - When updating a book, any additional fields in the input field apart from the expected ones will be ignored
 
-## APIs
+## API Details
 
 For the purposes of documentation, the below examples will assume that the server is running at `localhost:3000` or `127.0.0.1:3000`.
 
