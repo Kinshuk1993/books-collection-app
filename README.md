@@ -6,7 +6,10 @@ A simple RESTful API server in Node.js for the book collection app. Each book ha
 
 - Working internet connection
 - Node.js installed (https://nodejs.org/)
-  - The application was developed using `Node` version `17.1.0` and `npm` version `8.1.2`
+  - The following version were used for developing this application:
+    - Node `17.1.0`
+    - NPM `8.1.2`
+    - MongoDB `5.0.3`
 - MongoDB installed and running locally (https://www.mongodb.com/)
   - Using Windows, just open the terminal at where you installed mongo and run `mongod.exe`
   - For Mac OS X, visit https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x
