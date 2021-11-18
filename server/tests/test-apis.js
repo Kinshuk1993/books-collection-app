@@ -901,4 +901,28 @@ describe('Books', () => {
       });
     });
   });
+
+  describe('/INVALID operation', () => {
+    it('it should return error if any other path is hit or some path hit with incorrect http method', (done) => {
+      chai.request(app)
+        .get('/invalid')
+        .send()
+        .end((_err, res) => {
+          res.should.have.status(501);
+          res.body.should.be.a('object');
+          res.body.should.have.property('error');
+          chai.assert(res.body.error.includes("GET method is not implemented for path /invalid"));
+        });
+      chai.request(app)
+        .get('/getBooksByAuthors')
+        .send()
+        .end((_err, res) => {
+          res.should.have.status(501);
+          res.body.should.be.a('object');
+          res.body.should.have.property('error');
+          chai.assert(res.body.error.includes("GET method is not implemented for path /getBooksByAuthors"));
+          done();
+        });
+    });
+  });
 });
