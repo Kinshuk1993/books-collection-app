@@ -27,7 +27,7 @@ To start, run the following command from the project root folder:
 
 - You can press `Ctrl` + `C` on the keyboard to stop the application
 
-## Assumptions
+## Some Assumptions
 
 - A Book must contain a `title`, `description` and one or more `authors`
   - `title` must be a string
