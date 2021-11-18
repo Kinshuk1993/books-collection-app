@@ -40,7 +40,7 @@ To start, run the following command from the project root folder:
 
 ## API Details
 
-For the purposes of documentation, the below examples will assume that the server is running at `localhost:3000` or `127.0.0.1:3000`.
+For the purposes of documentation, the below examples will assume that the server is running at `127.0.0.1:3000`.
 
 - Add a book
   - Method: `POST`
