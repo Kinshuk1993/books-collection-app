@@ -21,7 +21,7 @@
 	"homepage": "https://github.com/Kinshuk1993/books-collection-app#readme",
 	"dependencies": {
 		"express": "^4.17.1",
-		"mongoose": "^6.0.12",
+		"mongoose": "^6.4.6",
 		"winston": "^3.3.3",
 		"winston-daily-rotate-file": "^4.5.5"
 	},
