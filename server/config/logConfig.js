@@ -9,6 +9,11 @@ const dailyRotateFileTransport = new transports.DailyRotateFile({
   datePattern: "DD-MM-YYYY"
 });
 
+// Handle errors from the file transport (required for winston-daily-rotate-file v5+)
+dailyRotateFileTransport.on('error', error => {
+  console.error('Error in log file rotation:', error);
+});
+
 export const logger = createLogger({
   // change level if in dev environment versus production
   level: env === "development" ? "verbose" : "info",

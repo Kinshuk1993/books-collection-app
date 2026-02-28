@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm outdated)",
+      "Bash(npm install)",
+      "Bash(npm audit)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(npm view express@latest version)",
+      "Bash(npm view mongoose@latest version)",
+      "Bash(npm view:*)",
+      "Bash(npm view chai@latest version)",
+      "Bash(npm view chai-http@latest version)",
+      "Bash(npm test)",
+      "Bash(mongod:*)",
+      "Bash(node --check:*)",
+      "Bash(node:*)",
+      "Bash(curl -s http://127.0.0.1:3000/getAllBooks)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
